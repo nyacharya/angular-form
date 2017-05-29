@@ -7,16 +7,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { TestFormComponent } from './test-form/test-form.component';
 import { SuccessComponent } from './success/success.component';
+import { LoginformComponent } from './loginform/loginform.component';
+import { ShowUsersComponent } from './show-users/show-users.component';
 
 const appRoutes: Routes = [
   { path: 'success', component: SuccessComponent },
-  { path: '', component: TestFormComponent }
+  { path: '', component: ShowUsersComponent },
+  { path: 'registration', component: TestFormComponent}
 ];
 @NgModule({
   declarations: [
     AppComponent,
     TestFormComponent,
-    SuccessComponent
+    SuccessComponent,
+    LoginformComponent,
+    ShowUsersComponent
   ],
   imports: [
     BrowserModule,

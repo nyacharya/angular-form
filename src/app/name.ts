@@ -1,9 +1,11 @@
 export class Detail{
-        public fname: string;
+        public name: string;
         public email: string;
+        public password: string;
     constructor(
         fname = "",
-        email = ""
+        email = "",
+        password = ""
     ){}
     
 }
