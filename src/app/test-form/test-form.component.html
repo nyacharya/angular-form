@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>
+    Form
+  </h2>
+  <form (ngSubmit)="onSubmit(testForm.value)" #testForm="ngForm" >
+    <div class="form-group">
+      <label for="name"> Name </label>
+      <input type="text" id="fname" class="form-control" required [(ngModel)]="det.fname" name="fname" #fname="ngModel">
+      <label for="email"> Email </label>
+      <input type="email" id="email" class="form-control" required [(ngModel)]="det.email" name="email" #email="ngModel">
+      <button type="submit" class="btn btn-success"> Submit </button>
+    </div>
+  </form>
+  <div>
+    Name: {{det.fname}} 
+    <br>
+    Email: {{det.email}}
+  </div>
+</div>
+
+
