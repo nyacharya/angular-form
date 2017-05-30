@@ -13,7 +13,8 @@ import { ShowUsersComponent } from './show-users/show-users.component';
 const appRoutes: Routes = [
   { path: 'success', component: SuccessComponent },
   { path: '', component: ShowUsersComponent },
-  { path: 'registration', component: TestFormComponent}
+  { path: 'registration', component: TestFormComponent},
+  { path: 'login', component: LoginformComponent}
 ];
 @NgModule({
   declarations: [

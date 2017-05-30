@@ -9,10 +9,13 @@ import { Router } from '@angular/router';
 })
 export class TestFormComponent  {
 
-  det= new Detail()
-constructor(private router: Router) { }
+  det= new Detail();
+
+constructor(private router: Router) {  
+  
+ }
   onSubmit(value: any){
-    if (value.fname == "nain" && value.email == "nain@gmail.com")
+    if (value.name == "nain" && value.email == "nain@gmail.com")
     {
       this.router.navigate(['/success']);
     }

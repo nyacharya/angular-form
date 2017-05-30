@@ -1,3 +1,24 @@
 <p>
-  loginform works!
+  loginform 
 </p>
+<div class="container">
+  <h2>
+    Form
+  </h2>
+  <form (ngSubmit)="onSubmit(testForm.value)" #testForm="ngForm" >
+    <div class="form-group">
+      <label for="email"> Email </label>
+      <input type="email" id="email" class="form-control" required [(ngModel)]="det.email" name="email" #email="ngModel">
+      <label for="password"> Password </label>
+      <input type="password" id="password" class="form-control" required [(ngModel)]="det.password" name="password" #password="ngModel">
+      <button type="submit" class="btn btn-success"> Submit </button>
+    </div>
+  </form>
+  <div>
+    <br>
+    {{det.email}}
+  </div>
+</div>
+
+
+

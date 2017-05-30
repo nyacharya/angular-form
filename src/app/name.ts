@@ -3,7 +3,7 @@ export class Detail{
         public email: string;
         public password: string;
     constructor(
-        fname = "",
+        name = "",
         email = "",
         password = ""
     ){}

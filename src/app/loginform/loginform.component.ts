@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Detail } from '../name';
 
 @Component({
   selector: 'app-loginform',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent implements OnInit {
-
+  det= new Detail();
   constructor() { }
 
   ngOnInit() {
